@@ -21,6 +21,7 @@ int main(int argc, char *argv[]){
             Editor ed(d);
             ed.loop();
         }else runEditor();
+        delete file;
     }else if (argc>2){
         throw runtime_error("too many arguments");
     }else{
